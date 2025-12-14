@@ -45,7 +45,9 @@ Key characteristics:
 
 🎥 Short demo showing live prediction via browser and automated ML workflow:
 
-▶️ Watch the demo video: https://youtu.be/ZfAlvFwOjuI
+▶️ Watch the demo video live prediction via browser: https://youtu.be/ZfAlvFwOjuI
+▶️ Watch the demo video automated ML workflow:https://youtu.be/u9ojbXArhTM
+
 
 [![Demo Video](architecture/fairvalue_flowchart.png)](https://youtu.be/ZfAlvFwOjuI)
 
