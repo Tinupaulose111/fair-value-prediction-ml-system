@@ -2,7 +2,8 @@
 # Fair Value Prediction – Production ML System
 
 A production-grade machine learning system for intrinsic stock value estimation, featuring drift detection,
-automated retraining , replace old model with new and cloud-based inference.
+automated retraining, hot model replacement, and cloud-based inference.
+
 
 [![CI/CD — API Service](https://github.com/Tinupaulose111/Fair_value/actions/workflows/api-cicd.yml/badge.svg)](https://github.com/Tinupaulose111/Fair_value/actions/workflows/api-cicd.yml)
 [![Drift Detection (Weekly)](https://github.com/Tinupaulose111/Fair_value/actions/workflows/drift.yml/badge.svg)](https://github.com/Tinupaulose111/Fair_value/actions/workflows/drift.yml)
@@ -33,8 +34,8 @@ to changing data distributions using drift detection and retraining automation.
 Key characteristics:
 - Multi-factor intrinsic value modeling
 - Automated drift detection (KS test)
-- retraining and deployment
-- hot model replacement
+- Automated retraining and deployment
+- Hot model replacement
 - Cloud-hosted inference API
 
   ## System Architecture
@@ -45,9 +46,16 @@ Key characteristics:
 
 🎥 Short demo showing live prediction via browser and automated ML workflow:
 
-▶️ Watch the demo video live prediction via browser: https://youtu.be/ZfAlvFwOjuI
-▶️ Watch the demo video automated ML workflow:https://youtu.be/u9ojbXArhTM
+🎥 **Live Prediction Demo**
+Shows real-time inference via browser using the deployed API:  
+▶️ https://youtu.be/ZfAlvFwOjuI
 
+🎥 **Automation & Workflow Demo**
+Shows drift detection, automated retraining, and deployment via GitHub Actions:  
+▶️ https://youtu.be/u9ojbXArhTM
+
+
+The diagram below represents the actual production flow implemented in this system.
 
 [![Demo Video](architecture/fairvalue_flowchart.png)](https://youtu.be/ZfAlvFwOjuI)
 
