@@ -74,6 +74,21 @@ The intrinsic value model was developed using a rigorous, multi-stage modeling p
 - Final model training using XGBoost with hyperparameter tuning
 - Model interpretability using SHAP analysis
 
+  ```mermaid
+flowchart LR
+    A[Financial Data<br/>Yahoo Finance] --> B[Data Cleaning<br/>Sanity Checks]
+    B --> C[Feature Engineering]
+    C --> D[Transformations<br/>Log / Power]
+    D --> E[Statistical Validation<br/>OLS / VIF]
+    E --> F[K-Fold<br/>Cross Validation]
+    F --> G[Bias Correction<br/>Smearing Factor]
+    G --> H[XGBoost Training<br/>Hyperparameter Tuning]
+    H --> I[Model Explainability<br/>SHAP]
+    I --> J[Final Model Artifact]
+
+
+
+
 
 ## Deployment & Optimization
 
@@ -85,19 +100,7 @@ The intrinsic value model was developed using a rigorous, multi-stage modeling p
 - Deployed on Oracle Cloud VM
 - Hot model replacement via container restart without rebuild
 
-  ## Model Development & Validation
-
-```mermaid
-flowchart LR
-    A[Financial Data<br/>Yahoo Finance] --> B[Data Cleaning<br/>Sanity Checks]
-    B --> C[Feature Engineering]
-    C --> D[Transformations<br/>Log / Power]
-    D --> E[Statistical Validation<br/>OLS / VIF]
-    E --> F[K-Fold<br/>Cross Validation]
-    F --> G[Bias Correction<br/>Smearing Factor]
-    G --> H[XGBoost Training<br/>Hyperparameter Tuning]
-    H --> I[Model Explainability<br/>SHAP]
-    I --> J[Final Model Artifact]
+  
 
 
 
