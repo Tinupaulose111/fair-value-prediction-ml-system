@@ -74,17 +74,6 @@ The intrinsic value model was developed using a rigorous, multi-stage modeling p
 - Final model training using XGBoost with hyperparameter tuning
 - Model interpretability using SHAP analysis
 
-##flowchart LR
-    A[Financial Data<br/>Yahoo Finance] --> B[Data Cleaning<br/>Sanity Checks]
-    B --> C[Feature Engineering<br/>Fundamental Ratios]
-    C --> D[Transformations<br/>Log / Power]
-    D --> E[Statistical Validation<br/>OLS Regression]
-    E --> F[Multicollinearity Check<br/>VIF]
-    F --> G[K-Fold<br/>Cross Validation]
-    G --> H[Bias Correction<br/>Smearing Factor]
-    H --> I[XGBoost Training<br/>Hyperparameter Tuning]
-    I --> J[Model Explainability<br/>SHAP Analysis]
-    J --> K[Final Model Artifact]
 
 
 ## Deployment & Optimization
@@ -96,6 +85,28 @@ The intrinsic value model was developed using a rigorous, multi-stage modeling p
 - Faster container startup and reduced cloud resource usage
 - Deployed on Oracle Cloud VM
 - Hot model replacement via container restart without rebuild
+
+Model Development & Validation
+
+The intrinsic value model was developed using a structured modeling and statistical validation pipeline, combining traditional financial analysis with machine learning techniques.
+flowchart LR
+    A[Financial Data<br/>Yahoo Finance] --> B[Data Cleaning<br/>Sanity Checks]
+    B --> C[Feature Engineering<br/>Fundamental Ratios]
+    C --> D[Transformations<br/>Log / Power]
+    D --> E[Statistical Validation<br/>OLS Regression]
+    E --> F[Multicollinearity Check<br/>VIF]
+    F --> G[K-Fold<br/>Cross Validation]
+    G --> H[Bias Correction<br/>Smearing Factor]
+    H --> I[XGBoost Training<br/>Hyperparameter Tuning]
+    I --> J[Model Explainability<br/>SHAP Analysis]
+    J --> K[Final Model Artifact]
+Highlights
+
+Multi-factor intrinsic value modeling (beyond EPS or Book Value)
+
+Combination of statistical rigor and ML robustness
+
+Bias reduction using smearing correction for log-transformed targets
 
   
 
