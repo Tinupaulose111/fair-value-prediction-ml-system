@@ -101,6 +101,24 @@ flowchart LR
     H --> I[Model Explainability<br/>SHAP]
     I --> J[Final Model Artifact]
 
+## 🔷 2️⃣ Deployment & Optimization – System Flow
+
+Add this **right after** the modeling diagram 👇
+
+```md
+## Deployment & Optimization
+
+```mermaid
+flowchart LR
+    A[Trained Model Artifact] --> B[Flask Inference API]
+    B --> C[Gunicorn Server]
+    C --> D[Docker Container<br/>Multi-stage Build]
+    D --> E[Oracle Cloud VM]
+    E --> F[Browser Prediction]
+
+    D -.-> G[Image Optimization<br/>2.7GB → 1.4GB]
+    E -.-> H[Hot Model Replacement<br/>API Restart]
+
 
 
 
