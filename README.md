@@ -39,8 +39,6 @@ Key characteristics:
 
   ## System Architecture
 
-![Fair Value ML System Architecture](architecture/fairvalue_flowchart.png)
-
 *High-level architecture showing data ingestion, drift detection, automated retraining, and deployment on Oracle Cloud VM.*
 
 ## Live Demo
