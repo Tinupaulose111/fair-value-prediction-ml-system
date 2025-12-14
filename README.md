@@ -86,29 +86,21 @@ The intrinsic value model was developed using a rigorous, multi-stage modeling p
 - Deployed on Oracle Cloud VM
 - Hot model replacement via container restart without rebuild
 
-Model Development & Validation
 
-The intrinsic value model was developed using a structured modeling and statistical validation pipeline, combining traditional financial analysis with machine learning techniques.
+## Model Development & Validation
+
+```mermaid
 flowchart LR
     A[Financial Data<br/>Yahoo Finance] --> B[Data Cleaning<br/>Sanity Checks]
-    B --> C[Feature Engineering<br/>Fundamental Ratios]
+    B --> C[Feature Engineering]
     C --> D[Transformations<br/>Log / Power]
-    D --> E[Statistical Validation<br/>OLS Regression]
-    E --> F[Multicollinearity Check<br/>VIF]
-    F --> G[K-Fold<br/>Cross Validation]
-    G --> H[Bias Correction<br/>Smearing Factor]
-    H --> I[XGBoost Training<br/>Hyperparameter Tuning]
-    I --> J[Model Explainability<br/>SHAP Analysis]
-    J --> K[Final Model Artifact]
-Highlights
+    D --> E[Statistical Validation<br/>OLS / VIF]
+    E --> F[K-Fold<br/>Cross Validation]
+    F --> G[Bias Correction<br/>Smearing Factor]
+    G --> H[XGBoost Training<br/>Hyperparameter Tuning]
+    H --> I[Model Explainability<br/>SHAP]
+    I --> J[Final Model Artifact]
 
-Multi-factor intrinsic value modeling (beyond EPS or Book Value)
-
-Combination of statistical rigor and ML robustness
-
-Bias reduction using smearing correction for log-transformed targets
-
-  
 
 
 
