@@ -34,7 +34,7 @@ Key characteristics:
 - Multi-factor intrinsic value modeling
 - Automated drift detection (KS test)
 - retraining and deployment
-- old model replacement
+- hot model replacement
 - Cloud-hosted inference API
 
   ## System Architecture
