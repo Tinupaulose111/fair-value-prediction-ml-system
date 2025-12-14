@@ -43,4 +43,15 @@ Key characteristics:
 
 *High-level architecture showing data ingestion, drift detection, automated retraining, and deployment on Oracle Cloud VM.*
 
+## Live Demo
+
+🎥 Short demo showing live prediction via browser and automated ML workflow:
+
+▶️ Watch the demo video: https://youtu.be/ZfAlvFwOjuI
+
+[![Demo Video](architecture/fairvalue_flowchart.png)](https://youtu.be/ZfAlvFwOjuI)
+
+
+
+
 
