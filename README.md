@@ -75,6 +75,18 @@ The intrinsic value model was developed using a rigorous, multi-stage modeling p
 - Model interpretability using SHAP analysis
 
 
+## Deployment & Optimization
+
+- Flask-based inference API for real-time prediction
+- Gunicorn application server for production-grade concurrency
+- Multi-stage Docker builds for optimized container size
+- Docker image size reduced from ~2.7 GB to ~1.4 GB
+- Faster container startup and reduced cloud resource usage
+- Deployed on Oracle Cloud VM
+- Hot model replacement via container restart without rebuild
+
+
+
 
 
 
