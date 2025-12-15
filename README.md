@@ -61,19 +61,35 @@ The diagram below represents the actual production flow implemented in this syst
 
 ## Model Development & Validation
 
-The intrinsic value model was developed using a rigorous, multi-stage modeling process:
+The intrinsic value model was developed using a rigorous, multi-stage modeling and statistical validation pipeline, combining traditional financial analysis with machine learning.
 
-- Financial data collection from Yahoo Finance (yfinance)
-- Data cleaning and sanity checks on financial ratios
-- Feature engineering using multiple fundamental indicators
-- Log and power transformations to stabilize variance
-- Baseline statistical modeling using OLS regression
-- Multicollinearity checks using Variance Inflation Factor (VIF)
-- K-Fold cross-validation for robustness
-- Smearing factor correction to reduce bias from log-transformed targets
-- Final model training using XGBoost with hyperparameter tuning
-- Model interpretability using SHAP analysis
+Financial data ingestion using Yahoo Finance (yfinance)
 
+Data cleaning and sanity checks on financial ratios
+
+Feature engineering using multiple fundamental indicators
+
+Log and power transformations to stabilize variance
+
+Baseline statistical modeling using OLS regression
+
+Multicollinearity assessment using Variance Inflation Factor (VIF)
+
+K-Fold cross-validation to ensure robustness and generalization
+
+Smearing factor correction to reduce bias from log-transformed targets
+
+Final model training using XGBoost with hyperparameter tuning
+
+Model interpretability using SHAP analysis
+
+Model Performance (Cross-Validated):
+
+R² ≈ 0.82
+
+MAPE ≈ 14%
+
+Metrics are reported using cross-validation to reflect generalization performance rather than single-split results.
 
 
 ## Deployment & Optimization
