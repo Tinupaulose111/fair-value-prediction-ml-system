@@ -52,7 +52,7 @@ Shows real-time inference via browser using the deployed API:
 
 🎥 **Automation & Workflow Demo**
 Shows drift detection, automated retraining, and deployment via GitHub Actions:  
-▶️ https://youtu.be/u9ojbXArhTM
+▶️ https://youtu.be/AOA4wUh8k90
 
 
 The diagram below represents the actual production flow implemented in this system.
